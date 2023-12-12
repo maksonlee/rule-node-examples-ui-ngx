@@ -9,6 +9,7 @@ import { SharedModule } from '@shared/public-api';
 import { CustomNodesConfigFilterModule } from './components/filter/custom-nodes-config-filter.module';
 import { CustomNodesConfigEnrichmentModule } from './components/enrichment/custom-nodes-config-enrichment.module';
 import { CustomNodesConfigTransformModule } from './components/transform/custom-nodes-config-transform.module';
+import { CustomNodesConfigExternalModule } from './components/exernal/custom-nodes-config-external.module';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { CustomNodesConfigTransformModule } from './components/transform/custom-
   exports: [
     CustomNodesConfigFilterModule,
     CustomNodesConfigEnrichmentModule,
-    CustomNodesConfigTransformModule
+    CustomNodesConfigTransformModule,
+    CustomNodesConfigExternalModule
   ]
 })
 export class CustomNodesConfigModule {
